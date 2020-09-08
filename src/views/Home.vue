@@ -81,12 +81,14 @@
 import data from "@/assets/data.json";
 import VClamp from "vue-clamp";
 import ImageRatio from "@/components/ImageRatio.vue";
+import moneyParser from "@/mixins/moneyParser.js";
 
 export default {
   components: {
     VClamp,
     ImageRatio
   },
+  mixins: [moneyParser],
   data() {
     return {
       categories: [
@@ -107,7 +109,7 @@ export default {
   },
   methods: {
     getText: function(experience) {
-      let price = new Intl.NumberFormat("en-US").format(experience.price);
+      let price = this.americanNumberFormat(experience.price);
       return `$${price} ${experience.title}`;
     }
   }
