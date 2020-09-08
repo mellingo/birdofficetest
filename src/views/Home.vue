@@ -1,18 +1,16 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+  <div class="home"></div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import data from "@/assets/data.json";
 
 export default {
-  name: "Home",
-  components: {
-    HelloWorld
+  data() {
+    return {
+      booked: data["experiences"].filter(xp => xp.category === "booked"),
+      featured: data["experiences"].filter(xp => xp.category === "featured")
+    };
   }
 };
 </script>

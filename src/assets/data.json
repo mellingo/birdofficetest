@@ -1,0 +1,124 @@
+{
+  "experiences": [
+    {
+      "id": "0",
+      "title": "Step behind the scenes of Havana’s theater",
+      "price": 7956,
+      "description": {
+        "intro": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam",
+        "content": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.",
+        "outro": "Prices valid till 31.10.2019, yearly adjustment for conversion rate to EURO"
+      },
+      "image": "exp-0.jpg",
+      "category": "booked"
+    },
+    {
+      "id": "1",
+      "title": "Dance your way into Cuban culture with a",
+      "price": 7956,
+      "description": {
+        "intro": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam",
+        "content": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.",
+        "outro": "Prices valid till 31.10.2019, yearly adjustment for conversion rate to EURO"
+      },
+      "image": "exp-1.jpg",
+      "category": "booked"
+    },
+    {
+      "id": "2",
+      "title": "Hunt for truffles in the countryside",
+      "price": 13361,
+      "description": {
+        "intro": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam",
+        "content": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.",
+        "outro": "Prices valid till 31.10.2019, yearly adjustment for conversion rate to EURO"
+      },
+      "image": "exp-2.jpg",
+      "category": "booked"
+    },
+    {
+      "id": "3",
+      "title": "Meet Kenyan innovators with a Nairobi...",
+      "price": 23204,
+      "description": {
+        "intro": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam",
+        "content": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.",
+        "outro": "Prices valid till 31.10.2019, yearly adjustment for conversion rate to EURO"
+      },
+      "image": "exp-3.jpg",
+      "category": "booked"
+    },
+    {
+      "id": "4",
+      "title": "Explore Miami’s Latin flavors with food...",
+      "price": 18232,
+      "description": {
+        "intro": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam",
+        "content": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.",
+        "outro": "Prices valid till 31.10.2019, yearly adjustment for conversion rate to EURO"
+      },
+      "image": "exp-4.jpg",
+      "category": "booked"
+    },
+    {
+      "id": "5",
+      "title": "Step behind the scenes of Havana’s theater",
+      "price": 7956,
+      "description": {
+        "intro": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam",
+        "content": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.",
+        "outro": "Prices valid till 31.10.2019, yearly adjustment for conversion rate to EURO"
+      },
+      "image": "exp-5.jpg",
+      "category": "featured"
+    },
+    {
+      "id": "6",
+      "title": "Dance your way into Cuban culture with a",
+      "price": 7956,
+      "description": {
+        "intro": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam",
+        "content": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.",
+        "outro": "Prices valid till 31.10.2019, yearly adjustment for conversion rate to EURO"
+      },
+      "image": "exp-6.jpg",
+      "category": "featured"
+    },
+    {
+      "id": "7",
+      "title": "Hunt for truffles in the countryside",
+      "price": 13361,
+      "description": {
+        "intro": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam",
+        "content": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.",
+        "outro": "Prices valid till 31.10.2019, yearly adjustment for conversion rate to EURO"
+      },
+      "image": "exp-7.jpg",
+      "category": "featured"
+    },
+    {
+      "id": "8",
+      "title": "Meet Kenyan innovators with a Nairobi...",
+      "price": 23204,
+      "description": {
+        "intro": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam",
+        "content": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.",
+        "outro": "Prices valid till 31.10.2019, yearly adjustment for conversion rate to EURO"
+      },
+      "image": "exp-8.jpg",
+      "category": "featured"
+    },
+    {
+      "id": "9",
+      "title": "Explore Miami’s Latin flavors with food...",
+      "price": 18232,
+      "description": {
+        "intro": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam",
+        "content": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.",
+        "outro": "Prices valid till 31.10.2019, yearly adjustment for conversion rate to EURO"
+      },
+      "image": "exp-9.jpg",
+      "category": "featured"
+    }
+  ]
+}
