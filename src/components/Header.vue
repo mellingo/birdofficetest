@@ -15,7 +15,7 @@
   </header>
 </template>
 
-<style>
+<style scoped>
 .header {
   padding: 1.2rem 5%;
   font-size: 1.2rem;
