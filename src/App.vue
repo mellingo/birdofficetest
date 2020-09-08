@@ -11,6 +11,8 @@ html {
   --light-grey: #acacac;
   --main-yellow: #febd17;
   --white: #ffffff;
+  --main-grey: #484848;
+  --dark-grey: #373738;
 }
 
 #app {
