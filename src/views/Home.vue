@@ -39,7 +39,6 @@
 }
 
 .gallery__title {
-  color: var(--dark-grey);
   font-size: 2.5rem;
 }
 

@@ -28,6 +28,7 @@ html {
   font-family: "Circular Std Black", Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--dark-grey);
 }
 
 main {
