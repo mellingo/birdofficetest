@@ -50,7 +50,7 @@
 
 .gallery__list {
   display: grid;
-  grid-template-columns: repeat(5, calc(20% - 1rem));
+  grid-template-columns: repeat(5, 1fr);
   column-gap: 1rem;
   row-gap: 1rem;
   list-style-type: none;
@@ -60,7 +60,7 @@
 
 @media (max-width: 1200px) {
   .gallery__list {
-    grid-template-columns: repeat(2, calc(50% - 1rem));
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -75,6 +75,7 @@
 .gallery__item__link {
   text-decoration: none;
   color: var(--main-grey);
+  font-size: 1.1rem;
 }
 
 .gallery__item:hover > .gallery__item__link {
