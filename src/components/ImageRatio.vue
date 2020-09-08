@@ -11,7 +11,6 @@
 <style scoped>
 .image__full {
   width: 100%;
-  margin-bottom: 0.5rem;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

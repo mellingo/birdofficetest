@@ -67,6 +67,7 @@
 }
 
 .gallery__item__link {
+  margin-top: 0.5rem;
   text-decoration: none;
   color: var(--main-grey);
   font-size: 1.1rem;
