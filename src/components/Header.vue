@@ -57,10 +57,18 @@
 
 <script>
 export default {
-  data() {
-    return {
-      details: "0"
-    };
+  computed: {
+    itemsCount() {
+      return this.$store.getters.itemsCount;
+    },
+    itemsPrice() {
+      return this.$store.getters.itemsPrice;
+    },
+    details() {
+      return this.itemsCount && this.itemsPrice
+        ? `${this.itemsCount} items - ${this.itemsPrice}$`
+        : "0";
+    }
   }
 };
 </script>
