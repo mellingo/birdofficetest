@@ -108,7 +108,8 @@ export default {
   },
   methods: {
     getText: function(experience) {
-      return `$${experience.price} ${experience.title}`;
+      let price = new Intl.NumberFormat("en-US").format(experience.price);
+      return `$${price} ${experience.title}`;
     }
   }
 };
