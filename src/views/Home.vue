@@ -28,9 +28,11 @@
             class="gallery__item__link stopPropagation"
             :to="{ name: 'Experience', params: { id: experience.id } }"
           >
-            <v-clamp autoresize :max-lines="2">{{
-              getText(experience)
-            }}</v-clamp>
+            <GalleryTitleClamp
+              :price="getPrice(experience.price)"
+              :title="experience.title"
+              :lineLimit="2"
+            />
           </router-link>
         </li>
       </ul>
@@ -92,14 +94,14 @@
 
 <script>
 import data from "@/assets/data.json";
-import VClamp from "vue-clamp";
 import ImageRatio from "@/components/ImageRatio.vue";
+import GalleryTitleClamp from "@/components/GalleryTitleClamp.vue";
 import moneyParser from "@/mixins/moneyParser.js";
 
 export default {
   components: {
-    VClamp,
-    ImageRatio
+    ImageRatio,
+    GalleryTitleClamp
   },
   mixins: [moneyParser],
   data() {
@@ -128,9 +130,8 @@ export default {
     }
   },
   methods: {
-    getText: function(experience) {
-      let price = this.americanNumberFormat(experience.price);
-      return `$${price} ${experience.title}`;
+    getPrice: function(value) {
+      return `$${this.americanNumberFormat(value)}`;
     }
   }
 };
