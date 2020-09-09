@@ -96,7 +96,7 @@ export default {
   mixins: [moneyParser],
   data() {
     return {
-      categories: [
+      allCategories: [
         {
           title: "Just Booked",
           experiences: data["experiences"].filter(
@@ -111,6 +111,13 @@ export default {
         }
       ]
     };
+  },
+  computed: {
+    categories: function() {
+      return this.allCategories.filter(
+        category => category.experiences.length > 0
+      );
+    }
   },
   methods: {
     getText: function(experience) {
