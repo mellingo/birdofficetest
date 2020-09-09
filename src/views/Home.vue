@@ -70,7 +70,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-width: 175px;
   cursor: pointer;
 }
 

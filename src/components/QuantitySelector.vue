@@ -41,13 +41,17 @@
   border-radius: 0.2rem;
   padding: 0.2rem;
   color: #969696;
-  margin-right: 1.25rem;
+  margin: 0 1.25rem 1rem 0;
 }
 
 .quantitySelector__input__number {
   width: 2rem;
   text-align: center;
   font-weight: 700;
+}
+
+.quantitySelector__submit {
+  margin-bottom: 1rem;
 }
 
 .button {
