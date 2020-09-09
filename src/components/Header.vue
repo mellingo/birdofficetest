@@ -49,13 +49,16 @@
 </style>
 
 <script>
+import moneyParser from "@/mixins/moneyParser.js";
+
 export default {
+  mixins: [moneyParser],
   computed: {
     itemsCount() {
       return this.$store.getters.itemsCount;
     },
     itemsPrice() {
-      return this.$store.getters.itemsPrice;
+      return this.americanNumberFormat(this.$store.getters.itemsPrice);
     },
     details() {
       return this.itemsCount && this.itemsPrice
