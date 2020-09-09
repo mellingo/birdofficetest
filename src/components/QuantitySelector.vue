@@ -76,10 +76,18 @@
   background-color: var(--white);
 }
 
+.button--white:not(:disabled):hover {
+  background-color: #e5e5e5;
+}
+
 .button--yellow {
   background-color: var(--main-yellow);
   color: var(--white);
   border-color: #fdb313;
+}
+
+.button--yellow:not(:disabled):hover {
+  background-color: #fdb313;
 }
 </style>
 
@@ -99,10 +107,13 @@ export default {
   },
   computed: {
     disableDecrement: function() {
-      return this.decrementLimit + this.quantity === 0;
+      return this.decrementLimit + this.quantity <= 0;
     },
     disableSubmit: function() {
-      return this.quantity < 0 && this.decrementLimit + this.quantity < 0;
+      return (
+        (this.quantity < 0 && this.decrementLimit + this.quantity < 0) ||
+        this.quantity === 0
+      );
     }
   },
   methods: {
