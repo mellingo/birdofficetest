@@ -10,7 +10,7 @@
       <div class="experience__informations__description">
         <p>{{ experience.description.intro }}</p>
         <p>{{ experience.description.content }}</p>
-        <p :style="{ '--medium-grey': '#afafaf' }">
+        <p :style="{ '--medium-grey': 'var(--light-grey)' }">
           {{ experience.description.outro }}
         </p>
       </div>
@@ -32,48 +32,56 @@
 <style scoped>
 .experience {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   --medium-grey: #585858;
   --light-yellow: #fef8e7;
+  --separator-height: var(--m70);
 }
 
 .experience__informations {
   width: 60%;
+  margin-bottom: var(--separator-height);
 }
 
 .experience__informations__header {
   padding-bottom: 1rem;
   border-bottom: var(--light-yellow) solid 15px;
+  margin-bottom: 2rem;
 }
 
 .experience__informations__title {
-  font-size: 3.75rem;
-  margin: 0 0 1rem;
+  font-size: var(--f52);
+  margin-bottom: 1rem;
 }
 
 .experience__informations__price {
   color: var(--main-yellow);
-  font-family: "Circular Std Medium", Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 2.5rem;
+  font-weight: 500;
+  font-size: var(--f34);
 }
 
 .experience__informations__description {
-  margin-top: 2rem;
-}
-
-.experience__informations__selector {
-  margin-top: 4rem;
+  margin: 0 1.875rem var(--separator-height) 0;
 }
 
 .experience__informations__description p {
   color: var(--medium-grey);
-  line-height: 1.8rem;
+  line-height: 2;
 }
 
 .experience__image {
   width: 35%;
+}
+
+@media (max-width: 1200px) {
+  .experience {
+    --separator-height: 2.5rem;
+  }
+  .experience__informations,
+  .experience__image {
+    width: 100%;
+  }
 }
 </style>
 

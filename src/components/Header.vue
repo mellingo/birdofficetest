@@ -17,8 +17,7 @@
 
 <style scoped>
 .header {
-  padding: 1.2rem 5%;
-  font-size: 1.2rem;
+  padding: 0.938rem 5%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -30,12 +29,8 @@
 .cart {
   display: flex;
   align-items: center;
-  border-left: solid 1px var(--light-grey);
-  padding: 0.75rem 0;
-}
-
-.cart * {
-  margin-left: 0.8rem;
+  border-left: solid 1px #c3c3c3;
+  padding: 0.75rem 0 0.8rem 1rem;
 }
 
 .cart__details {
@@ -44,14 +39,12 @@
   border-radius: 1rem;
   padding: 0.2rem 0.5rem;
   color: var(--white);
+  margin-right: 0.8rem;
 }
 
 .cart__title {
   color: var(--light-grey);
-}
-
-.cart__image {
-  margin-left: 1.2rem;
+  margin-right: 1.4rem;
 }
 </style>
 

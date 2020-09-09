@@ -19,6 +19,7 @@
           "
         >
           <ImageRatio
+            class="gallery__item__image"
             :url="require('@/assets/experiences/' + experience.image)"
             ratio="145%"
           />
@@ -38,12 +39,13 @@
 </template>
 
 <style scoped>
-.gallery + .gallery {
-  margin-top: 5rem;
+.gallery:not(:last-child) {
+  margin-bottom: var(--bottom-separator-height);
 }
 
 .gallery__title {
-  font-size: 2.5rem;
+  font-size: var(--f32);
+  margin-bottom: 2rem;
 }
 
 .gallery__list {
@@ -70,11 +72,17 @@
   cursor: pointer;
 }
 
+.gallery__item__image {
+  margin-bottom: 0.5rem;
+}
+
 .gallery__item__link {
-  margin-top: 0.5rem;
   text-decoration: none;
-  color: var(--main-grey);
-  font-size: 1.1rem;
+  color: #484848;
+  font-family: "SF UI Text Light", Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: var(--f15);
+  line-height: 1.2;
 }
 
 .gallery__item:hover > .gallery__item__link {

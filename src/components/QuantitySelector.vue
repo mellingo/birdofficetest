@@ -3,13 +3,18 @@
     <div class="quantitySelector__input">
       <button
         class="button button--white button--icon"
+        aria-label="Decrement quantity of product"
         @click="increment(-1)"
         :disabled="disableDecrement"
       >
         -
       </button>
       <span class="quantitySelector__input__number">{{ quantity }}</span>
-      <button class="button button--white button--icon" @click="increment(1)">
+      <button
+        class="button button--white button--icon"
+        aria-label="Increment quantity of product"
+        @click="increment(1)"
+      >
         +
       </button>
     </div>
@@ -34,17 +39,15 @@
   align-items: center;
   background-color: #f2f2f2;
   border-radius: 0.2rem;
-  padding: 0.2rem 0.4rem;
+  padding: 0.2rem;
   color: #969696;
-}
-
-.quantitySelector > * + * {
-  margin-left: 1rem;
+  margin-right: 1.25rem;
 }
 
 .quantitySelector__input__number {
   width: 2rem;
   text-align: center;
+  font-weight: 700;
 }
 
 .button {
@@ -56,18 +59,21 @@
 
 .button:disabled {
   cursor: not-allowed;
+  opacity: 0.5;
 }
 
 .button--text {
-  padding: 0.5rem 1rem;
+  font-size: var(--f17);
+  padding: 0.75rem 1.375rem;
 }
 
 .button--icon {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  width: 1.5rem;
-  height: 1.5rem;
+  align-items: center;
+  font-size: 1.5rem;
+  width: 2.25rem;
+  height: 2.25rem;
 }
 
 .button--white {
@@ -88,6 +94,26 @@
 
 .button--yellow:not(:disabled):hover {
   background-color: #fdb313;
+}
+
+@media (max-width: 760px) {
+  .button--icon {
+    font-size: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .button--text {
+    font-size: 1.2rem;
+  }
+
+  .quantitySelector__input {
+    padding: 0.4rem 0.8rem;
+    margin-right: 2rem;
+  }
+  .quantitySelector__input__number {
+    width: 3rem;
+  }
 }
 </style>
 
