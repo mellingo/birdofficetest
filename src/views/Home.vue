@@ -12,7 +12,10 @@
           v-for="experience in category.experiences"
           :key="'experience' + experience.id"
           @click="
-            $router.push({ name: 'Experience', params: { id: experience.id } })
+            $router.push({
+              name: 'Experience',
+              params: { id: experience.id }
+            })
           "
         >
           <ImageRatio
@@ -20,7 +23,8 @@
             ratio="145%"
           />
           <router-link
-            class="gallery__item__link"
+            @click.native.stop
+            class="gallery__item__link stopPropagation"
             :to="{ name: 'Experience', params: { id: experience.id } }"
           >
             <v-clamp autoresize :max-lines="2">{{
