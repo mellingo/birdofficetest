@@ -43,6 +43,9 @@ export default {
     addEventListener("resize", this.handleResize);
     this.$nextTick(this.init);
   },
+  destroyed() {
+    removeEventListener("resize", this.handleResize);
+  },
   computed: {
     clampText: function() {
       return this.clampArray.join(" ");
