@@ -97,6 +97,16 @@ export default {
     QuantitySelector
   },
   mixins: [moneyParser],
+  beforeRouteEnter(to, from, next) {
+    let experience = data["experiences"].find(item => item.id === to.params.id);
+    if (experience) {
+      next(vm => {
+        vm.experience = experience;
+      });
+    } else {
+      next({ name: "NotFound" });
+    }
+  },
   data() {
     return {
       experience: data["experiences"].find(

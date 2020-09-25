@@ -17,12 +17,24 @@ const routes = [
       import(/* webpackChunkName: "about" */ "../views/Experience.vue")
   },
   {
-    path: "*",
+    path: "/404",
     name: "NotFound",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/NotFound.vue")
+      import(/* webpackChunkName: "notfound" */ "../views/NotFound.vue")
+  },
+  {
+    path: "*",
+    component: () =>
+      import(/* webpackChunkName: "notfound" */ "../views/NotFound.vue")
   }
 ];
+
+Vue.mixin({
+  // eslint-disable-next-line no-unused-vars
+  beforeRouteEnter(to, from, next) {
+    next();
+  }
+});
 
 const router = new VueRouter({
   mode: "history",
